@@ -1,0 +1,3 @@
+{
+  "app": "npx ts-node bin/everywhere-infra.ts"
+}
