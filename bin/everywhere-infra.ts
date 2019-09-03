@@ -1,6 +1,12 @@
 #!/usr/bin/env node
 import cdk = require('@aws-cdk/core');
-import { EverywhereInfraStack } from '../lib/everywhere-infra-stack';
+import { EverywhereStack } from '../lib/everywhere-stack';
+import env from '../env';
 
 const app = new cdk.App();
-new EverywhereInfraStack(app, 'EverywhereInfraStack');
+new EverywhereStack(app, 'EverywhereStack', {
+  env: {
+    account: env.account,
+    region: env.region
+  }
+});

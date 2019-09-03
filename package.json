@@ -4,6 +4,7 @@
   "bin": {
     "everywhere-infra": "bin/everywhere-infra.js"
   },
+  "license": "MIT",
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
@@ -15,9 +16,11 @@
     "typescript": "~3.5.3"
   },
   "dependencies": {
-    "@aws-cdk/aws-sns": "^1.6.1",
-    "@aws-cdk/aws-sns-subscriptions": "^1.6.1",
-    "@aws-cdk/aws-sqs": "^1.6.1",
+    "@aws-cdk/aws-certificatemanager": "^1.6.1",
+    "@aws-cdk/aws-cloudfront": "^1.6.1",
+    "@aws-cdk/aws-cognito": "^1.6.1",
+    "@aws-cdk/aws-route53": "^1.6.1",
+    "@aws-cdk/aws-s3": "^1.6.1",
     "@aws-cdk/core": "^1.6.1"
   }
 }
